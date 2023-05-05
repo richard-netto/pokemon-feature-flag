@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll",
     "eject": "react-scripts eject",
     "build": "react-scripts build",
     "build-application": "npm run build",
