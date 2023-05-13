@@ -56,6 +56,7 @@
     "react/function-component-definition": "off",
     "react/jsx-props-no-spreading": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "react/require-default-props": [0, { "ignoreFunctionalComponents": true }]
+    "react/require-default-props": [0, { "ignoreFunctionalComponents": true }],
+    "no-console": "warn"
   }
 }
