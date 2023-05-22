@@ -22,7 +22,6 @@ root.render(
       flagsmith={flagsmith}
       options={{
         environmentID: process.env.REACT_APP_FLAGSMITH_ENVIRONMENT_ID ?? '',
-        realtime: true,
         cacheFlags: true,
       }}
     >
