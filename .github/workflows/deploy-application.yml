@@ -37,6 +37,10 @@ jobs:
 
       # Get app version from package.json
       - name: Set app environment varibales
+        env:
+          REACT_APP_FLAGSMITH_ENVIRONMENT_ID: ${{ secrets.FLAGSMITH_ENVIRONMENT_ID }}
+          REACT_APP_API_POKEMON_USERS: ${{ secrets.API_POKEMON_USERS }}
+          REACT_APP_API_POKEMON: ${{ secrets.API_POKEMON }}
         run: echo "REACT_APP_VERSION=$(pnpm pkg get version)" >> $GITHUB_ENV
 
       # Build application
