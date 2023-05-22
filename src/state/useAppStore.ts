@@ -60,6 +60,12 @@ const useAppStore = create<IState>()(
           }));
           return pokemon;
         },
+        // Error
+        errorMessage: '',
+        showError: false,
+        setError: (errorMessage, showError) => {
+          set(() => ({ errorMessage, showError }));
+        },
       }),
       { name: 'pokemon-app-store', version: 1 }
     ),
