@@ -8,4 +8,8 @@ export interface IState {
   // Pokemon
   pokemonCache: IPokemon[];
   getPokemon: (searchParam: string) => Promise<IPokemon>;
+  // Errors
+  errorMessage: string;
+  showError: boolean;
+  setError: (errorMessage: string, showError: boolean) => void;
 }
