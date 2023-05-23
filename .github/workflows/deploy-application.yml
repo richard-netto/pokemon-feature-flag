@@ -42,7 +42,9 @@ jobs:
           REACT_APP_API_POKEMON_USERS: ${{ secrets.API_POKEMON_USERS }}
           REACT_APP_API_POKEMON: ${{ secrets.API_POKEMON }}
           REACT_APP_BANANA: ${{ secrets.BANANA }}
-        run: echo ${{ secrets.BANANA }}
+        run: |
+          echo "REACT_APP_BANANA = ${{ secrets.BANANA }}"
+          echo "env = ${{ github.env }}"
 
       # Build application
       - name: Build project
