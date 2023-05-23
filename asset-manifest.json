@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/pokemon-feature-flag/static/css/main.9298f686.css",
-    "main.js": "/pokemon-feature-flag/static/js/main.a55bf5bf.js",
+    "main.js": "/pokemon-feature-flag/static/js/main.4c88a3ed.js",
     "static/media/Pokemon_logo.png": "/pokemon-feature-flag/static/media/Pokemon_logo.e93152c8b9160d3198d7.png",
     "index.html": "/pokemon-feature-flag/index.html"
   },
   "entrypoints": [
     "static/css/main.9298f686.css",
-    "static/js/main.a55bf5bf.js"
+    "static/js/main.4c88a3ed.js"
   ]
 }
