@@ -10,7 +10,6 @@ jobs:
       REACT_APP_FLAGSMITH_ENVIRONMENT_ID: ${{ secrets.FLAGSMITH_ENVIRONMENT_ID }}
       REACT_APP_API_POKEMON_USERS: ${{ secrets.API_POKEMON_USERS }}
       REACT_APP_API_POKEMON: ${{ secrets.API_POKEMON }}
-      REACT_APP_BANANA: "Laranja"
 
     steps:
       # Checkout
@@ -39,12 +38,6 @@ jobs:
       # Install dependencies
       - name: Install dependencies
         run: pnpm install
-
-      # Get app version from package.json
-      - name: Set app environment variables
-        run: |
-          echo "REACT_APP_BANANA = ${{ secrets.BANANA }}"
-          echo "env = ${{ github.env }}"
 
       # Build application
       - name: Build project
