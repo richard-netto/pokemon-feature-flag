@@ -42,7 +42,9 @@ jobs:
           REACT_APP_API_POKEMON_USERS: ${{ secrets.API_POKEMON_USERS }}
           REACT_APP_API_POKEMON: ${{ secrets.API_POKEMON }}
           REACT_APP_BANANA: ${{ secrets.BANANA }}
-        run: echo "REACT_APP_VERSION=$(pnpm pkg get version)" >> $GITHUB_ENV
+        run: |
+          echo "REACT_APP_VERSION=$(pnpm pkg get version)" >> $GITHUB_ENV |
+          echo $REACT_APP_BANANA
 
       # Build application
       - name: Build project
